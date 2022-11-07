@@ -1,0 +1,27 @@
+body {
+    background-color: #000000;
+}
+
+a {
+    text-decoration:none;
+    color:#bbcadb;
+    text-align:center;
+}
+
+.stars-gif {
+    text-align:center;
+    content:inherit
+}
+
+.button {
+    display:flex;;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 15px;
+    width:200px;
+    height:30px;
+    background-color:#18375a;
+    padding:5px;
+    cursor:pointer;
+    text-align:center;
+}
