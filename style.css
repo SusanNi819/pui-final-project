@@ -1,26 +1,45 @@
 body {
     background-color: #000000;
+    background-image:url(./Assets/bg-stars.gif);
 }
 
 a {
     text-decoration:none;
-    color:#bbcadb;
+    color:#dabbdb;
     text-align:center;
+    font-family:sans-serif;
 }
 
-.stars-gif {
-    text-align:center;
-    content:inherit
+nav {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#000000;
+}
+
+.logo {
+    display: flex;
+    margin-right:30px;
+}
+.menu-items {
+    display: flex;
+    font-size:x-large;
+    gap:50px;
+    margin-right:30px;
 }
 
 .button {
-    display:flex;;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     margin-left:auto;
     margin-right:auto;
+    margin-top:300px;
     border-radius: 15px;
     width:200px;
     height:30px;
-    background-color:#18375a;
+    background-color:#151516;
     padding:5px;
     cursor:pointer;
     text-align:center;
