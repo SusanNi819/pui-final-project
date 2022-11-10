@@ -1,0 +1,122 @@
+body {
+    background-color: #000000;
+    background-image:url(./Assets/bg-stars.gif);
+}
+
+a {
+    text-decoration:none;
+    color:#dabbdb;
+    text-align:center;
+    font-family:sans-serif;
+}
+
+nav {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#000000;
+}
+
+.logo {
+    display: flex;
+    margin-right:30px;
+}
+.menu-items {
+    display: flex;
+    font-size:x-large;
+    gap:50px;
+    margin-right:30px;
+}
+
+.description {
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:30px;
+    font-size:large;
+    width:900px;
+    color:#ebdeeb;
+    text-align:left;
+    font-family:sans-serif;
+    opacity: 0;
+    animation: 4s fadeIn;
+    animation-fill-mode: forwards;
+    transition: opacity 1.5s;
+}
+
+footer {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    background-color:#241f24;
+    color:#766476;
+    font-family:sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.row-one-cards {
+    display:flex;
+    margin: 30px;
+    justify-content:space-between;
+    animation: 3s fadeIn;
+    opacity:0;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.row-two-cards {
+    display:flex;
+    margin: 30px;
+    justify-content:space-between;
+    animation:3s fadeIn;
+    opacity:0;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.individual-card {
+    background-color: transparent;
+    width: 160px;
+    height: 240px;
+  }
+
+.flip-card-inner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.individual-card:hover .flip-card-inner {
+    display:flex;
+    transform: rotateY(180deg);
+    position:absolute;
+}
+  
+.flip-card-front, .flip-card-back {
+    display:flex;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    display:flex;
+    background-color: #ebdeeb;
+    color: black;
+    border-radius: 15px;
+}
+
+  .flip-card-back {
+    display:flex;
+    background-color: #ebdeeb;
+    color: white;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+}
