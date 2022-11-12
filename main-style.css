@@ -7,7 +7,7 @@ a {
     text-decoration:none;
     color:#dabbdb;
     text-align:center;
-    font-family:sans-serif;
+    font-family:serif;
 }
 
 nav {
@@ -30,11 +30,11 @@ nav {
 }
 
 .description {
+    display:flex;
     margin-top:50px;
     margin-bottom:50px;
     margin-left:30px;
     font-size:large;
-    width:900px;
     color:#ebdeeb;
     text-align:left;
     font-family:sans-serif;
@@ -65,6 +65,7 @@ footer {
 
 .row-one-cards {
     display:flex;
+    flex-wrap:wrap;
     margin: 30px;
     justify-content:space-between;
     animation: 3s fadeIn;
@@ -75,6 +76,7 @@ footer {
 
 .row-two-cards {
     display:flex;
+    flex-wrap:wrap-reverse;
     margin: 30px;
     justify-content:space-between;
     animation:3s fadeIn;
@@ -87,6 +89,7 @@ footer {
     background-color: transparent;
     width: 160px;
     height: 240px;
+    perspective: 1000px;
   }
 
 .flip-card-inner {
@@ -97,7 +100,6 @@ footer {
 .individual-card:hover .flip-card-inner {
     display:flex;
     transform: rotateY(180deg);
-    position:absolute;
 }
   
 .flip-card-front, .flip-card-back {
@@ -107,6 +109,7 @@ footer {
 }
 
 .flip-card-front {
+    position:absolute;
     display:flex;
     background-color: #ebdeeb;
     color: black;
@@ -114,9 +117,19 @@ footer {
 }
 
   .flip-card-back {
+    position:absolute;
     display:flex;
     background-color: #ebdeeb;
     color: white;
     border-radius: 15px;
     transform: rotateY(180deg);
+}
+
+.mouse-container {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index:-100;
 }

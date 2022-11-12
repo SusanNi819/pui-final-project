@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <title>Zodiac Home Page</title>
     <link rel="stylesheet" href="main-style.css"/>
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <script defer src="mouse.js"></script>
   </head>
   <body>
+    <div class="mouse-container"></div>
     <nav>
         <div class="logo">
             <a href="./main.html">
@@ -17,7 +20,7 @@
                 <a href="main.html">Home</a>
             </div>
             <div class="animation-button">
-                <a href="index.html">Back</a>
+                <a href="index.html">Loading</a>
             </div>
         </div>
       </nav>
@@ -27,66 +30,72 @@
         <br><br>
         Zodiac signs are the twelve 30 degree sectors that make up Earth's 360-degree orbit around the Sun.
         <br><br>
-        Flip a card to discovery a sign.
+        Flip the cards to discover the signs.
       </p>
       <div class="row-one-cards">
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Aries.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <a href="details.html">
+                  <img src="./Assets/Aries-Back.png" class="zodiac" alt="Leo Zodiac Image">
+                </a>
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Taurus.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <img src="./Assets/Taurus-Back.png" class="zodiac" alt="Leo Zodiac Image">
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Gemini.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <a href="details.html">
+                  <img src="./Assets/Gemini-Back.png" class="zodiac" alt="Leo Zodiac Image">
+                </a>
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Cancer.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <img src="./Assets/Cancer-Back.png" class="zodiac" alt="Leo Zodiac Image">
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Leo.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <a href="details.html">
+                  <img src="./Assets/Leo-Back.png" class="zodiac" alt="Leo Zodiac Image">
+                </a>
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Virgo.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <img src="./Assets/Virgo-Back.png" class="zodiac" alt="Leo Zodiac Image">
               </div>
             </div>
         </div>
@@ -96,60 +105,66 @@
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Libra.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <img src="./Assets/Libra-Back.png" class="zodiac" alt="Leo Zodiac Image">
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Scorpio.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <a href="details.html">
+                  <img src="./Assets/Scorpio-Back.png" class="zodiac" alt="Leo Zodiac Image">
+                </a>
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Sagittarius.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <img src="./Assets/Sagittarius-Back.png" class="zodiac" alt="Leo Zodiac Image">
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Capricorn.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <a href="details.html">
+                  <img src="./Assets/Capricorn-Back.png" class="zodiac" alt="Leo Zodiac Image">
+                </a>
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Aquarius.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <img src="./Assets/Aquarius-Back.png" class="zodiac" alt="Leo Zodiac Image">
               </div>
             </div>
         </div>
         <div class="individual-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./Assets/placeholder.png" class="zodiac" alt="Zodiac Image">
+                <img src="./Assets/Pisces.png" class="zodiac" alt="Zodiac Image">
               </div>
               <div class="flip-card-back">
-                <img src="./Assets/leo-placeholder.png" class="zodiac" alt="Leo Zodiac Image">
+                <a href="details.html">
+                  <img src="./Assets/Pisces-Back.png" class="zodiac" alt="Leo Zodiac Image">
+                </a>
               </div>
             </div>
         </div>
