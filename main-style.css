@@ -178,6 +178,10 @@ footer {
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
+    div + div {
+        margin-top: 10px;
+    }
+
     .row-two-cards {
         display:flex;
         flex-direction:column;
@@ -188,6 +192,14 @@ footer {
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
+
+    .individual-card {
+        background-color: transparent;
+        width: 160px;
+        height: 240px;
+        perspective: 1000px;
+        margin:#000000 5px;
+      }
     
   }
 
