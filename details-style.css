@@ -62,8 +62,28 @@ nav {
     justify-content:space-around;
 }
 
-.sign-image:hover {
+.sign-image-leo:hover {
     background: url("./Assets/Leo-Hover.png") no-repeat;
+}
+
+.sign-image-aries:hover {
+    background: url("./Assets/Aries-Hover.png") no-repeat;
+}
+
+.sign-image-gemini:hover {
+    background: url("./Assets/Gemini-Hover.png") no-repeat;
+}
+
+.sign-image-pisces:hover {
+    background: url("./Assets/Gemini-Hover.png") no-repeat;
+}
+
+.sign-image-capricorn:hover {
+    background: url("./Assets/Capricorn-Hover.png") no-repeat;
+}
+
+.sign-image-scorpio:hover {
+    background: url("./Assets/Scorpio-Hover.png") no-repeat;
 }
 
 .container-bottom {
