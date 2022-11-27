@@ -102,10 +102,16 @@ footer {
     transform: rotateY(180deg);
 }
   
-.flip-card-front, .flip-card-back {
+.flip-card-front {
     display:flex;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+.flip-card-back {
+    display:flex;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
 }
 
 .flip-card-front {
@@ -134,6 +140,15 @@ footer {
     z-index:-100;
 }
 
+.zodiac-aries,
+.zodiac-gemini,
+.zodiac-leo,
+.zodiac-scorpio,
+.zodiac-capricorn,
+.zodiac-pisces {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(255, 223, 172);
+}
 
 @media only screen and (max-width: 800px) {
     nav {
