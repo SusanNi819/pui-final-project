@@ -52,6 +52,15 @@ nav {
     flex-direction:row;
 }
 
+.container-top-right {
+    display:flex;
+    flex-direction:row;
+}
+
+.container-top-right.responsive {
+    width:100%;
+}
+
 .container-bottom-left-bottom {
     display:flex;
     justify-content:space-around;
@@ -62,29 +71,16 @@ nav {
     justify-content:space-around;
 }
 
-.sign-image-leo:hover {
-    background: url("./Assets/Leo-Hover.png") no-repeat;
-}
 
-.sign-image-aries:hover {
-    background: url("./Assets/Aries-Hover.png") no-repeat;
-}
-
-.sign-image-gemini:hover {
-    background: url("./Assets/Gemini-Hover.png") no-repeat;
-}
-
-.sign-image-pisces:hover {
-    background: url("./Assets/Pisces-Hover.png") no-repeat;
-}
-
-.sign-image-capricorn:hover {
-    background: url("./Assets/Capricorn-Hover.png") no-repeat;
-}
-
-.sign-image-scorpio:hover {
-    background: url("./Assets/Scorpio-Hover.png") no-repeat;
-}
+.container-top-right img:last-child {
+    display: none;  
+  }
+.container-top-right:hover img:last-child {
+    display: block;  
+  }
+.container-top-right:hover img:first-child {
+    display: none;  
+  }
 
 .container-bottom {
     display:flex;
