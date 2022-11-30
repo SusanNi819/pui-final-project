@@ -71,6 +71,9 @@ nav {
     justify-content:space-around;
 }
 
+.container-top-right.responsive {
+    width:100%;  
+  }
 
 .container-top-right img:last-child {
     display: none;  
@@ -139,8 +142,47 @@ footer {
         font-family:sans-serif;
     }
 
-    .container-top-right {
-        size:10px;
+    .container-bottom-left-bottom {
+        display:flex;
+    }
+    
+    .container-bottom-right-bottom {
+        display:flex;
+        justify-content:space-around;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width:601px) {
+    nav {
+        display: flex;
+        flex-direction:column;
+    }
+    .logo {
+        display: flex;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction:column;
+        font-size:large;
+        align-items:center;
+        gap:10px;
+    }
+
+    .container-top {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .sign-description {
+        display:flex;
+        margin-top:50px;
+        margin-bottom:50px;
+        margin-right: 30px;
+        font-size:large;
+        color:#ebe4de;
+        text-align:justify;
+        font-family:sans-serif;
     }
 
     .container-bottom-left-bottom {

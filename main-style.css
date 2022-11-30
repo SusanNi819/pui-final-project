@@ -218,4 +218,79 @@ footer {
     
   }
 
+  @media only screen and (max-width: 1050px) and (min-width: 601px) {
+    nav {
+        display: flex;
+        flex-direction:column;
+    }
+    .logo {
+        display: flex;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction:column;
+        font-size:large;
+        align-items:center;
+        gap:10px;
+    }
+
+    .description {
+        display:flex;
+        margin-top:50px;
+        margin-bottom:50px;
+        margin-left:30px;
+        margin-right: 30px;
+        font-size:large;
+        color:#ebe4de;
+        text-align:justify;
+        font-family:sans-serif;
+        opacity: 0;
+        animation: 4s fadeIn;
+        animation-fill-mode: forwards;
+        transition: opacity 1.5s;
+    }
+
+    .two-groups {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+    }
+
+    .row-one-cards {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-content:center;
+        animation: 3s fadeIn;
+        opacity:0;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    div + div {
+        margin-top: 10px;
+    }
+
+    .row-two-cards {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-content:center;
+        animation: 3s fadeIn;
+        opacity:0;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .individual-card {
+        background-color: transparent;
+        width: 160px;
+        height: 240px;
+        perspective: 1000px;
+        margin:#000000 5px;
+      }
+    
+  }
+
+
   
