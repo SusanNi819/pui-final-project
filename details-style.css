@@ -37,14 +37,14 @@ nav {
     display: flex;
     font-size:large;
     gap:50px;
-    margin-right:30px;
+    padding-right:30px;
 }
 
 .container {
     display:flex;
     flex-direction:column;
-    margin:30px;
     flex-wrap:wrap;
+    width:100%;
 }
 
 .container-top {
@@ -57,10 +57,16 @@ nav {
     flex-direction:row;
 }
 
-.container-top-right.responsive {
-    width:100%;
+.sign-name {
+    margin-left: 30px;
 }
-
+.sign-description {
+    display:flex;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
 .container-bottom-left-bottom {
     display:flex;
     justify-content:space-around;
@@ -70,10 +76,6 @@ nav {
     display:flex;
     justify-content:space-around;
 }
-
-.container-top-right.responsive {
-    width:100%;  
-  }
 
 .container-top-right img:last-child {
     display: none;  
@@ -129,6 +131,13 @@ footer {
     .container-top {
         display:flex;
         flex-direction:column;
+        width:100%;
+    }
+    .container-top-right {
+        width:80%;
+    }
+    .sign-image {
+        width:100%;
     }
 
     .sign-description {
@@ -136,6 +145,7 @@ footer {
         margin-top:50px;
         margin-bottom:50px;
         margin-right: 30px;
+        margin-left: 30px;
         font-size:large;
         color:#ebe4de;
         text-align:justify;
@@ -144,11 +154,13 @@ footer {
 
     .container-bottom-left-bottom {
         display:flex;
+        width:80%
     }
     
     .container-bottom-right-bottom {
         display:flex;
         justify-content:space-around;
+        width:80%
     }
 }
 
