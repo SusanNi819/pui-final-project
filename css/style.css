@@ -3,6 +3,11 @@ body {
     background-image:url(../Assets/bg-stars.gif);
 }
 
+h1 {
+    color:#f3c59c;
+    text-align:center;
+}
+
 a {
     text-decoration:none;
     color:#ebe4de;
