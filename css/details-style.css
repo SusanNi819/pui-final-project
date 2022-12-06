@@ -10,11 +10,15 @@ a {
     font-family:serif;
 }
 
-p,
-h3 {
+p {
     text-decoration:none;
     color:#ffffff;
     font-family:sans-serif;
+}
+
+h2 {
+    margin-left:30px;
+    color:#ffffff;
 }
 
 h1 {
