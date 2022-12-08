@@ -1,3 +1,4 @@
+/* Styling for general layout of the main home page */ 
 body {
     background-color: #000000;
     background-image:url(../Assets/bg-stars.gif);
@@ -37,63 +38,12 @@ nav {
     display: flex;
     margin-right:30px;
 }
+
 .menu-items {
     display: flex;
     font-size:large;
     gap:50px;
     padding-right:30px;
-}
-
-.container {
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    width:100%;
-}
-
-.container-top {
-    display:flex;
-    flex-direction:row;
-}
-
-.container-top-right {
-    display:flex;
-    flex-direction:row;
-}
-
-.sign-name {
-    margin-left: 30px;
-}
-.sign-description {
-    display:flex;
-    margin-top:50px;
-    margin-bottom:50px;
-    margin-right: 30px;
-    margin-left: 30px;
-}
-.container-bottom-left-bottom {
-    display:flex;
-    justify-content:space-around;
-}
-
-.container-bottom-right-bottom {
-    display:flex;
-    justify-content:space-around;
-}
-
-.container-top-right img:last-child {
-    display: none;  
-  }
-.container-top-right:hover img:last-child {
-    display: block;  
-  }
-.container-top-right:hover img:first-child {
-    display: none;  
-  }
-
-.container-bottom {
-    display:flex;
-    flex-direction:column;
 }
 
 footer {
@@ -115,6 +65,64 @@ footer {
     z-index:-100;
 }
 
+/* Styling for the main informations about the sign*/ 
+.container {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+.container-top {
+    display:flex;
+    flex-direction:row;
+}
+
+.container-top-right {
+    display:flex;
+    flex-direction:row;
+}
+
+.sign-name {
+    margin-left: 30px;
+}
+
+.sign-description {
+    display:flex;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.container-bottom-left-bottom {
+    display:flex;
+    justify-content:space-around;
+}
+
+.container-bottom-right-bottom {
+    display:flex;
+    justify-content:space-around;
+}
+
+.container-top-right img:last-child {
+    display: none;  
+}
+
+.container-top-right:hover img:last-child {
+    display: block;  
+}
+
+.container-top-right:hover img:first-child {
+    display: none;  
+}
+
+.container-bottom {
+    display:flex;
+    flex-direction:column;
+}
+
+/* Styling for different screen sizes */
 @media only screen and (max-width: 600px) {
     nav {
         display: flex;
